@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Typography, makeStyles } from '@material-ui/core';
 import CustomCard from '../components/CustomCard';
+import Project from '../components/Project';
 import theme from '../styles';
 import data from '../data/projects.json';
 
@@ -57,6 +58,7 @@ const Projects = () => {
 				justify="center"
 				className={classes.grid}
 			>
+				<Project />
 				{data.projects.map((project) => {
 					return (
 						<CustomCard
